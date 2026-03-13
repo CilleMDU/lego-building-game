@@ -1,6 +1,6 @@
-import styles from "resetGame.module.css";
+import styles from "./resetGame.module.css";
 
-export default function resetGame() {
+export default function ResetGame() {
     return (
         <div className={styles.resetGame}>
             <h1>Reset Game</h1>

@@ -1,6 +1,6 @@
 import styles from "./languageSelect.module.css";
 
-export default function languageSelect() {
+export default function LanguageSelect() {
     return (
         <div className={styles.languageSelect}>
             <h1>Select Your Language</h1>

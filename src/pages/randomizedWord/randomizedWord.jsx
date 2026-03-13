@@ -1,6 +1,6 @@
-import styles from "randomizedWord.module.css";
+import styles from "./randomizedWord.module.css";
 
-export default function randomizedWord() {
+export default function RandomizedWord() {
     return (
         <div className={styles.randomizedWord}>
             <h1>Randomized Word</h1>

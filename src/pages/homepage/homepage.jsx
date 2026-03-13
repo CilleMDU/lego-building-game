@@ -1,6 +1,6 @@
 import styles from "./homepage.module.css";
 
-export default function homepage() {
+export default function Homepage() {
     return (
         <div className={styles.homepage}>
             <h1>Welcome to our game!</h1>
