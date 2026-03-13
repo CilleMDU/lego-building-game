@@ -1,5 +1,6 @@
 {
   "name": "lego-building-game",
+  "base": "/lego-building-game/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
