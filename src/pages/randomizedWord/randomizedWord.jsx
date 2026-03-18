@@ -5,7 +5,6 @@ import styles from "./randomizedWord.module.css";
 import FinBtn from "../../assets/finish.svg"
 import playSound, {backgroundMusic, backgroundMusicVolume, backgroundMusicStop} from "../../audio/audio";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router";
 
 export default function RandomizedWord() {
     const [volume, setVolume] = useState(50);

@@ -8,11 +8,6 @@ export default function CountDown() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (timeLeft <= 0) {
-            navigate("/resetgame");
-            return;
-        }
-
         const timer = setInterval(() => {
             setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
         }, 1000);
