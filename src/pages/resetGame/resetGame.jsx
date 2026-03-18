@@ -3,13 +3,14 @@ import styles from "./resetGame.module.css";
 import Finished from "../../assets/FinishTitle.svg";
 import Replay from "../../assets/replay.svg";
 import Reset from "../../assets/reset.svg";
-import playSound from "../../audio/audio";
+import playSound, {backgroundMusicStop} from "../../audio/audio";
 
 export default function ResetGame() {
     const navigate = useNavigate();
     
     const handleDown = () => {
       playSound("choose", 0.6);
+      backgroundMusicStop();
     };
 
     const handleReplay = () => {
