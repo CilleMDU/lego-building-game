@@ -2,11 +2,19 @@ import Randomizer from "../../components/ramdomzier/randomizer";
 import CountDown from "../../components/countDown/countDown";
 import styles from "./randomizedWord.module.css";
 import FinBtn from "../../assets/finish.svg"
-import {backgroundMusicVolume} from "../../audio/audio";
+import playSound, {backgroundMusicVolume, backgroundMusicStop} from "../../audio/audio";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export default function RandomizedWord() {
     const [volume, setVolume] = useState(50);
+    const navigate = useNavigate();
+
+    const finish = () => {
+        backgroundMusicStop();
+        playSound("success");
+        navigate("/resetgame");
+    }
 
     const handleVolumeChange = (e) => {
       const next = Number(e.target.value);
@@ -20,7 +28,7 @@ export default function RandomizedWord() {
         <CountDown />
         <button
           className={styles.finBtn}
-          onClick={() => (window.location.href = "/resetgame")}
+          onClick={finish}
         >
           <img src={FinBtn} alt="Finish" />
         </button>

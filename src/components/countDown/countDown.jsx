@@ -22,6 +22,7 @@ export default function CountDown() {
 
         if (timeLeft === 0) {
             backgroundMusicStop();
+            playSound("success");
             navigate("/resetgame", {replace: true});
         }
     }, [timeLeft, navigate])
