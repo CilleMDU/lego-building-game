@@ -2,3 +2,36 @@
     --font-family-title: 'REM', sans-serif;
     --font-family-body: 'phudu', sans-serif;
 }
+
+.languageSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    min-height: 100vh;
+}
+
+.choose {
+    width: 869px;
+    height: 317px;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 100px;
+}
+
+.languageButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dutchFlag:hover {
+    content: url("../../assets/dutchHover.svg");
+}
+
+.danishFlag:hover {
+    content: url("../../assets/danishHover.svg");
+}
