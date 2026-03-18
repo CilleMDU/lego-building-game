@@ -11,11 +11,12 @@ export default function playSound(name, volume = 0.5) {
     return activeSound;
 }
 
+let bgMusic = null;
+
 export function backgroundMusic(name = "gameMusic", volume = 0.5) {
     const src = sounds[name];
     if (!src) return null;
 
-    let bgMusic = null;
     if (bgMusic) {
          return bgMusic;
     }
@@ -29,9 +30,8 @@ export function backgroundMusic(name = "gameMusic", volume = 0.5) {
 }
 
 export function backgroundMusicVolume(volume) {
-    if (!backgroundMusic) return null;
-
-    backgroundMusic.volume = Math.min(Math.max(volume, 0), 1);
+    if (!bgMusic) return;
+    bgMusic.volume = Math.min(Math.max(volume, 0), 1);
 }
 
 const sounds = {
