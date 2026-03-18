@@ -16,7 +16,7 @@ export default function CountDown() {
     }, []);
 
     useEffect(() => {
-        if (timeLeft > 0 && timeLeft <= 5) {
+        if (timeLeft > 0 && timeLeft <= 10) {
             playSound("countdown", 1);
         }
 
