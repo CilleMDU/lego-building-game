@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import Randomizer from "../../components/ramdomzier/randomizer";
 import CountDown from "../../components/countDown/countDown";
 import styles from "./randomizedWord.module.css";

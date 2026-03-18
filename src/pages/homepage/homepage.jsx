@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import styles from "./homepage.module.css";
 import StartBtn from "../../assets/startBtn.svg";
 import Logo from "../../assets/legoLogo.svg";

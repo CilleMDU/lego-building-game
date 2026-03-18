@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import styles from "./languageSelect.module.css";
-import ChooseBtn from "../../assets/Choose.svg"
+import ChooseBtn from "../../assets/choose.svg"
 import Danish from "../../assets/danish.svg";
 import Dutch from "../../assets/dutch.svg";
 import playSound, { backgroundMusic, backgroundMusicStop } from "../../audio/audio";
