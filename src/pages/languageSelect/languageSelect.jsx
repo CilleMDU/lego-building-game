@@ -9,7 +9,7 @@ export default function LanguageSelect() {
     const navigate = useNavigate();
 
     const handleLanguageSelect = (language) => {
-        playSound("start");
+        playSound("start", 0.6);
         localStorage.setItem("selectedLanguage", language);
         navigate("/randomizedword");
     };
