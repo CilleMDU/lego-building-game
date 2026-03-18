@@ -1,102 +1,102 @@
 [
-    {
-        "id": 1,
-        "language": "danish",
-        "word": "Bil"
-    },
-    {
-        "id": 2,
-        "language": "danish",
-        "word": "Hus"
-    },
-    {
-        "id": 3,
-        "language": "danish",
-        "word": "Træ"
-    },
-    {
-        "id": 4,
-        "language": "danish",
-        "word": "Blomst"
-    },
-    {
-        "id": 5,
-        "language": "danish",
-        "word": "Fugl"
-    },
-    {
-        "id": 6,
-        "language": "danish",
-        "word": "Bord"
-    },
-    {
-        "id": 7,
-        "language": "danish",
-        "word": "Stol"
-    },
-    {
-        "id": 8,
-        "language": "danish",
-        "word": "Vand"
-    },
-    {
-        "id": 9,
-        "language": "danish",
-        "word": "Sol"
-    },
-    {
-        "id": 10,
-        "language": "danish",
-        "word": "Måne"
-    },
-    {
-        "id": 11,
-        "language": "dutch",
-        "word": "Auto"
-    },
-    {
-        "id": 12,
-        "language": "dutch",
-        "word": "Huis"
-    },
-    {
-        "id": 13,
-        "language": "dutch",
-        "word": "Boom"
-    },
-    {
-        "id": 14,
-        "language": "dutch",
-        "word": "Bloem"
-    },
-    {
-        "id": 15,
-        "language": "dutch",
-        "word": "Vogel"
-    },
-    {
-        "id": 16,
-        "language": "dutch",
-        "word": "Tafel"
-    },
-    {
-        "id": 17,
-        "language": "dutch",
-        "word": "Stoel"
-    },
-    {
-        "id": 18,
-        "language": "dutch",
-        "word": "Water"
-    },
-    {
-        "id": 19,
-        "language": "dutch",
-        "word": "Zon"
-    },
-    {
-        "id": 20,
-        "language": "dutch",
-        "word": "Maan"
-    }
+  {
+    "id": 1,
+    "language": "danish",
+    "word": "Mariehøne"
+  },
+  {
+    "id": 2,
+    "language": "danish",
+    "word": "Rumraket"
+  },
+  {
+    "id": 3,
+    "language": "danish",
+    "word": "Sommerfugl"
+  },
+  {
+    "id": 4,
+    "language": "danish",
+    "word": "Trøje"
+  },
+  {
+    "id": 5,
+    "language": "danish",
+    "word": "Pølsehorn"
+  },
+  {
+    "id": 6,
+    "language": "danish",
+    "word": "Lastbil"
+  },
+  {
+    "id": 7,
+    "language": "danish",
+    "word": "Billederamme"
+  },
+  {
+    "id": 8,
+    "language": "danish",
+    "word": "Hest"
+  },
+  {
+    "id": 9,
+    "language": "danish",
+    "word": "Træ"
+  },
+  {
+    "id": 10,
+    "language": "danish",
+    "word": "Ost"
+  },
+  {
+    "id": 11,
+    "language": "dutch",
+    "word": "Auto"
+  },
+  {
+    "id": 12,
+    "language": "dutch",
+    "word": "Huis"
+  },
+  {
+    "id": 13,
+    "language": "dutch",
+    "word": "Boom"
+  },
+  {
+    "id": 14,
+    "language": "dutch",
+    "word": "Bloem"
+  },
+  {
+    "id": 15,
+    "language": "dutch",
+    "word": "Vogel"
+  },
+  {
+    "id": 16,
+    "language": "dutch",
+    "word": "Tafel"
+  },
+  {
+    "id": 17,
+    "language": "dutch",
+    "word": "Stoel"
+  },
+  {
+    "id": 18,
+    "language": "dutch",
+    "word": "Water"
+  },
+  {
+    "id": 19,
+    "language": "dutch",
+    "word": "Zon"
+  },
+  {
+    "id": 20,
+    "language": "dutch",
+    "word": "Maan"
+  }
 ]

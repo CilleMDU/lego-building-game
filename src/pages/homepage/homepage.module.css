@@ -1,6 +1,67 @@
+:root {
+    --font-family-title: 'REM', sans-serif;
+    --font-family-body: 'phudu', sans-serif;
+}
+
 .homepage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 80px;
+    min-height: 100vh;
+}
+
+.startBtn {
+    background: none;
+    border: none;
+}
+
+.startBtn img:hover {
+    cursor: pointer;
+    content: url(../../assets/startBtnHover.svg);
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 8px;
+    color: #000;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 58px;
+    width: 1092px;
+    height: 133px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: var(--font-family-body);
+    font-style: normal;
+    color: #3C1EC3;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.edition {
+    font-weight: 600;
+    letter-spacing: 3.6px;
 }
