@@ -10,9 +10,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/randomized-word" element={<RandomizedWord />} />
-        <Route path="/language-select" element={<LanguageSelect />} />
-        <Route path="/reset-game" element={<ResetGame />} />
+        <Route path="/randomizedword" element={<RandomizedWord />} />
+        <Route path="/languageselect" element={<LanguageSelect />} />
+        <Route path="/resetgame" element={<ResetGame />} />
       </Routes>
     </>
   );
