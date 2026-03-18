@@ -2,8 +2,7 @@ import { useNavigate } from "react-router";
 import styles from "./homepage.module.css";
 import StartBtn from "../../assets/startBtn.svg";
 import Logo from "../../assets/legoLogo.svg";
-import playSound, {backgroundMusic, backgroundMusicStop} from "../../audio/audio";
-import { useNavigate } from "react-router";
+import playSound, {backgroundMusic} from "../../audio/audio";
 import { useEffect } from "react";
 
 export default function Homepage() {

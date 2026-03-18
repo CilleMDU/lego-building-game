@@ -3,9 +3,8 @@ import Randomizer from "../../components/ramdomzier/randomizer";
 import CountDown from "../../components/countDown/countDown";
 import styles from "./randomizedWord.module.css";
 import FinBtn from "../../assets/finish.svg"
-import playSound, {backgroundMusic, backgroundMusicVolume, backgroundMusicStop} from "../../audio/audio";
+import playSound, {backgroundMusic, backgroundMusicVolume} from "../../audio/audio";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router";
 
 export default function RandomizedWord() {
     const [volume, setVolume] = useState(50);
@@ -16,7 +15,6 @@ export default function RandomizedWord() {
 
     const navigate = useNavigate();
     const finish = () => {
-        backgroundMusicStop();
         playSound("success");
         navigate("/resetgame");
     }

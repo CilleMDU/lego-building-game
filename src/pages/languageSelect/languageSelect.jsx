@@ -3,7 +3,7 @@ import styles from "./languageSelect.module.css";
 import ChooseBtn from "../../assets/choose.svg"
 import Danish from "../../assets/danish.svg";
 import Dutch from "../../assets/dutch.svg";
-import playSound, { backgroundMusic, backgroundMusicStop } from "../../audio/audio";
+import playSound, { backgroundMusicStop } from "../../audio/audio";
 
 export default function LanguageSelect() {
     const navigate = useNavigate();
