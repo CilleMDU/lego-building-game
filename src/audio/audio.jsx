@@ -29,6 +29,13 @@ export function backgroundMusic(name = "gameMusic", volume = 0.5) {
     return bgMusic;
 }
 
+export function backgroundMusicStop() {
+    if (!bgMusic) return;
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
+    bgMusic = null;
+}
+
 export function backgroundMusicVolume(volume) {
     if (!bgMusic) return;
     bgMusic.volume = Math.min(Math.max(volume, 0), 1);
@@ -40,5 +47,6 @@ const sounds = {
     gameMusic: "/sounds/game-music.mp3",
     choose: "/sounds/choose.mp3",
     restart: "/sounds/restart.mp3",
-    success: "/sounds/success.mp3"
+    success: "/sounds/success.mp3",
+    countdown: "/sounds/countdown.mp3"
 };
