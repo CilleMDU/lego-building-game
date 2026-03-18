@@ -1,5 +1,13 @@
 export default function playSound(name, volume = 0.5) {
-    const src =
+    const src = sounds[name];
+    if (!src) return null;
+
+    const audio = new Audio(src);
+    audio.volume = Math.min(Math.max(volume, 0), 1);
+
+    audio.play().catch(() => {
+
+    });
 }
 
 const sounds = {
