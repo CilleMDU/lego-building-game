@@ -1,4 +1,5 @@
 import styles from "./languageSelect.module.css";
+import playSound from "../../audio/audio";
 
 export default function LanguageSelect() {
     return (
