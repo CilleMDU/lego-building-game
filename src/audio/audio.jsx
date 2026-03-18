@@ -46,7 +46,6 @@ const sounds = {
     slowMusic: "/sounds/slow-music.mp3",
     gameMusic: "/sounds/game-music.mp3",
     choose: "/sounds/choose.mp3",
-    restart: "/sounds/restart.mp3",
     success: "/sounds/success.mp3",
     countdown: "/sounds/tick.mp3"
 };
