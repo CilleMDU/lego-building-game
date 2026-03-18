@@ -5,8 +5,8 @@ export default function ResetGame() {
         <div className={styles.resetGame}>
             <h1>Reset Game</h1>
             <p>Are you sure you want to reset the game? This action cannot be undone.</p>
-            <button className={styles.resetButton}>Yes, Reset Game</button>
-            <button className={styles.cancelButton}>No, Keep Playing</button>
+            <button className={styles.replayBtn} onClick={() => window.location.href = "/languageSelect"}>Replay</button>
+            <button className={styles.resetBtn} onClick={() => window.location.href = "/"}>Reset</button>
         </div>
     );
 } 
