@@ -2,3 +2,28 @@
     --font-family-title: 'REM', sans-serif;
     --font-family-body: 'phudu', sans-serif;
 }
+
+.randomizer {
+    margin-bottom: -80px;
+}
+
+.currentWord {
+    font-family: var(--font-family-body);
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 12.8px;
+    color: #000;
+    background-image: url(../../assets/Blank.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+}

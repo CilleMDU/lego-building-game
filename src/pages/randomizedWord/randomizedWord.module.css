@@ -2,3 +2,26 @@
     --font-family-title: 'REM', sans-serif;
     --font-family-body: 'phudu', sans-serif;
 }
+
+.randomizedWord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.finBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.finBtn img {
+    width: 150px;
+    height: 150px;
+}
+
+.finBtn img:hover {
+    content: url(../../assets/finishHover.svg);
+}

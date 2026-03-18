@@ -7,11 +7,6 @@ export default function CountDown() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (timeLeft === 0) {
-            navigate("/resetgame");
-            return;
-        }
-
         const timer = setInterval(() => {
             setTimeLeft(prev => prev - 1);
         }, 1000);
@@ -25,7 +20,6 @@ export default function CountDown() {
 
     return (
         <div className={styles.countDown}>
-            <h2>Time Left</h2>
             <p className={styles.timer}>{formattedTime}</p>
         </div>
     );
