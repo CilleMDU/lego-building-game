@@ -3,15 +3,15 @@ import styles from "./languageSelect.module.css";
 import ChooseBtn from "../../assets/Choose.svg"
 import Danish from "../../assets/danish.svg";
 import Dutch from "../../assets/dutch.svg";
-import playSound, { backgroundMusic } from "../../audio/audio";
+import playSound, { backgroundMusic, backgroundMusicStop } from "../../audio/audio";
 
 export default function LanguageSelect() {
     const navigate = useNavigate();
 
     const handleLanguageSelect = (language) => {
-        backgroundMusic("gameMusic", 0.1);
         playSound("start", 0.6);
         localStorage.setItem("selectedLanguage", language);
+        backgroundMusicStop();
         navigate("/randomizedword");
     };
 

@@ -1,8 +1,9 @@
 import styles from "./homepage.module.css";
 import StartBtn from "../../assets/startBtn.svg";
 import Logo from "../../assets/legoLogo.svg";
-import playSound from "../../audio/audio";
+import playSound, {backgroundMusic, backgroundMusicStop} from "../../audio/audio";
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 
 export default function Homepage() {
     const navigate = useNavigate();
@@ -13,6 +14,10 @@ export default function Homepage() {
     const handleStartClick = () => {
         setTimeout(() => navigate("/languageselect"), 120);
     };
+
+    useEffect(() => {
+        backgroundMusic("slowMusic", 0.2);
+    }, []);
 
     return (
         <div className={styles.homepage}>
