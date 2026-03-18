@@ -3,6 +3,13 @@ import StartBtn from "../../assets/startBtn.svg";
 import Logo from "../../assets/legoLogo.svg";
 
 export default function Homepage() {
+    const navigate = useNavigate();
+
+    const handleStartClick = () => {
+        playSound("start");
+        navigate("/languageselect");
+    };
+
     return (
         <div className={styles.homepage}>
             <div className={styles.titleContainer}>
