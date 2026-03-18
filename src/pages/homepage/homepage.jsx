@@ -1,5 +1,5 @@
 import styles from "./homepage.module.css";
-import StartBtn from "../../assets/StartBtn.svg";
+import StartBtn from "../../assets/startBtn.svg";
 
 export default function Homepage() {
     return (
