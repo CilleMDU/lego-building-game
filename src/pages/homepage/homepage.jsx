@@ -7,9 +7,11 @@ import { useNavigate } from "react-router";
 export default function Homepage() {
     const navigate = useNavigate();
 
+    const handleStartDown = () => {
+        playSound("choose", 0.6);
+    }
     const handleStartClick = () => {
-        playSound("choose");
-        navigate("/languageselect");
+        setTimeout(() => navigate("/languageselect"), 120);
     };
 
     return (
@@ -22,7 +24,7 @@ export default function Homepage() {
                 <p className={styles.description}>Denmark VS Netherlands</p>
                 <p className={styles.edition}>EDITION</p>
             </div>
-            <button className={styles.startBtn} onClick={handleStartClick}>
+            <button className={styles.startBtn} onPointerDown={handleStartDown} onClick={handleStartClick}>
                 <img src={StartBtn} alt="Start Game"/>
             </button>
         </div>
