@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import styles from "./countDown.module.css";
+import playSound, {backgroundMusicStop} from "../../audio/audio";
 
 export default function CountDown() {
     const [timeLeft, setTimeLeft] = useState(120);
@@ -13,11 +14,23 @@ export default function CountDown() {
         }
 
         const timer = setInterval(() => {
-            setTimeLeft(prev => prev - 1);
+            setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [timeLeft, navigate]);
+    }, []);
+
+    useEffect(() => {
+        if (timeLeft > 0 && timeLeft <= 10) {
+            playSound("countdown", 1);
+        }
+
+        if (timeLeft === 0) {
+            backgroundMusicStop();
+            playSound("success");
+            navigate("/resetgame", {replace: true});
+        }
+    }, [timeLeft, navigate])
 
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
