@@ -3,11 +3,13 @@ import styles from "./languageSelect.module.css";
 import ChooseBtn from "../../assets/Choose.svg"
 import Danish from "../../assets/danish.svg";
 import Dutch from "../../assets/dutch.svg";
+import playSound, { backgroundMusic } from "../../audio/audio";
 
 export default function LanguageSelect() {
     const navigate = useNavigate();
 
     const handleLanguageSelect = (language) => {
+        playSound("start");
         localStorage.setItem("selectedLanguage", language);
         navigate("/randomizedword");
     };

@@ -8,7 +8,7 @@ export default function Homepage() {
     const navigate = useNavigate();
 
     const handleStartClick = () => {
-        playSound("start");
+        playSound("choose");
         navigate("/languageselect");
     };
 
