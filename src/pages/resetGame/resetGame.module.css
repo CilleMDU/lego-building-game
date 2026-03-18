@@ -1,0 +1,42 @@
+.resetGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    min-height: 100vh;
+}
+
+.finishedImage {
+    width: 869px;
+    height: 317px;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 200px;
+}
+
+.Btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.replayBtn {
+    width: 250px;
+    height: 250px;
+}
+
+.resetBtn {
+    width: 250px;
+    height: 250px;
+}
+
+.replayBtn:hover {
+    content: url(../../assets/replayHover.svg);
+}
+
+.resetBtn:hover {
+    content: url(../../assets/resetHover.svg);
+}
