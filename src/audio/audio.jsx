@@ -11,7 +11,7 @@ export default function playSound(name, volume = 0.5) {
     return activeSound;
 }
 
-export function backgroundMusic(name = "gameMusic") {
+export function backgroundMusic(name = "gameMusic", volume = 0.5) {
     const src = sounds[name];
     if (!src) return null;
 
@@ -22,9 +22,16 @@ export function backgroundMusic(name = "gameMusic") {
 
     bgMusic = new Audio(src);
     bgMusic.loop = true;
+    bgMusic.volume = Math.min(Math.max(volume, 0), 1);
     
     bgMusic.play().catch(() => {});
     return bgMusic;
+}
+
+export function backgroundMusicVolume(volume) {
+    if (!backgroundMusic) return null;
+
+    backgroundMusic.volume = Math.min(Math.max(volume, 0), 1);
 }
 
 const sounds = {
