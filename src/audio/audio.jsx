@@ -8,8 +8,23 @@ export default function playSound(name, volume = 0.5) {
 
     activeSound.play().catch(() => {
     });
-
     return activeSound;
+}
+
+export function backgroundMusic(name = "gameMusic") {
+    const src = sounds[name];
+    if (!src) return null;
+
+    let bgMusic = null;
+    if (bgMusic) {
+         return bgMusic;
+    }
+
+    bgMusic = new Audio(src);
+    bgMusic.loop = true;
+    
+    bgMusic.play().catch(() => {});
+    return bgMusic;
 }
 
 const sounds = {
